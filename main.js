@@ -1,25 +1,37 @@
 // Ciclo Tabellina del 2
 
 
-// for (let num = 2; num <= 20; num++) {
-//     if(num % 2 == 0){
-//         console.log(num);
-//     }
-// }
+ for (let i = 2; i <= 20; i++) {
+     if(i % 2 == 0){         
+         console.log(i);
+     }
+ }
 
 
 
 // Ciclo - 2
-// Contare da 1 a 20 (solo pari)
-let pari = 0;
-let dispari = 0;
+// Contare da 1 a 20 
 
-for (let i = 1; i < 20; i++) {
-    if (pari % 2 == 0) continue;
+
+for (let i = 0; i < 20; i++) {
+    if (i % 2 == 0) continue;
+    console.log(i);
     } 
     
+// Ciclo Media Numeri Dispari
+let numero = 1;
+let somma = 0;
 
-    console.log(`Pari ${pari} e dispari ${dispari}`);
+while (numero <= 20) {
+    if (numero % 2 !== 0) {
+        somma += numero;
+    }
+    numero++;
+}
+
+let mediaDispari = somma / 10;
+
+    console.log(`La Media dei nuemri dispari è ${mediaDispari}`);
 
 
 
