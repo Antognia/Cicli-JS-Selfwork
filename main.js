@@ -11,11 +11,12 @@
 
 // Ciclo - 2
 // Contare da 1 a 20 
-
+// Solo numeri pari
 
 for (let i = 0; i < 20; i++) {
-    if (i % 2 == 0) continue;
+    if (i % 2 == 0){
     console.log(i);
+    }
     } 
     
 // Ciclo Media Numeri Dispari
