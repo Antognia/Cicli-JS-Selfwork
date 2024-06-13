@@ -40,7 +40,7 @@ do {
             console.log("E' stata selezionata Birra");
             break;
         default:
-            console.log("Scelta non valida. Per favore, inserisci un numero tra 1 e 3.");
+            console.log("Scelta non valida!");
     }
 } while (bevanda < '1' || bevanda > '3');
     
