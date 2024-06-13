@@ -19,44 +19,30 @@ let bevanda = prompt(`Scegli la tua Bevanda: \n Acqua \n Coca cola \n Birra`);
 
 
 
-let bevanda;
 
-
-  do {
-  bevanda  
-
-      if (bevanda === 'Acqua'){
-          console.log(`E' stata selezionata l' Acqua`);
-        }else if (bevanda === 'Coca cola'){
-            console.log(`E' stata selezionata Coca cola`);
-        }else if (bevanda === 'Birra'){
-            console.log(`E' stata selezionata Birra`);  
-        }else{
-            bevanda = prompt('Risposta non valida! Reinserisci bevanda');
-         continue;
-        }
-        break;
-    }
 
 
     // Revisone esercizio con i Numeri
 
-       do {  
+       let bevanda;
 
-           bevanda = prompt (`Scegli la tua Bevanda: \n 1 Acqua \n 2 Coca cola \n 3 Birra`);
-          
-                if (bevanda == 1){
-                    console.log(`E' stata selezionata l' Acqua`);
-                  }else if (bevanda == 2){
-                      console.log(`E' stata selezionata Coca cola`);
-                  }else if (bevanda == 3){
-                      console.log(`E' stata selezionata Birra`);  
-                  }
-                  
-            
-                 
-              } while (bevanda < 1 || bevanda > 3);
+do {  
+    bevanda = prompt(`Scegli la tua Bevanda: \n 1 Acqua \n 2 Coca cola \n 3 Birra`);
 
+    switch(bevanda) {
+        case '1':
+            console.log("E' stata selezionata l'Acqua");
+            break;
+        case '2':
+            console.log("E' stata selezionata Coca cola");
+            break;
+        case '3':
+            console.log("E' stata selezionata Birra");
+            break;
+        default:
+            console.log("Scelta non valida. Per favore, inserisci un numero tra 1 e 3.");
+    }
+} while (bevanda < '1' || bevanda > '3');
     
    
   
